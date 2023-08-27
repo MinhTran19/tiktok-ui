@@ -1,12 +1,10 @@
-import Header from "~/components/Layout/components/Header";
-import Sidebar from "./Sidebar";
+import Header from "~/components/Layouts/components/Header";
 
-const DefaultLayout = ({children}) => {
+const HeaderOnly = ({children}) => {
     return ( 
         <>
             <Header />
             <div className="container">
-                <Sidebar />
                 <div className="content">
                     {children}
                 </div>
@@ -15,4 +13,4 @@ const DefaultLayout = ({children}) => {
      );
 }
  
-export default DefaultLayout;
+export default HeaderOnly;

@@ -1,5 +1,5 @@
 // Layout for Upload
-import { HeaderOnly } from '~/components/Layout';
+import { HeaderOnly } from '~/components/Layouts';
 
 
 // Pages component
