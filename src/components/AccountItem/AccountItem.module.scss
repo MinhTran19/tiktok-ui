@@ -1,0 +1,43 @@
+.d-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.wrapper {
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(22, 24, 35, 0.3);
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+    margin-left: 12px;
+    color: var(--text-color);
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+.check-icon {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+}
+
+.username {
+    font-size: 1.4rem;
+    color: rgb(22, 24, 35, 0.5);
+}

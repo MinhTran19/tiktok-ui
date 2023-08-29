@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,11 +10,18 @@ import {
 import styles from './Header.module.scss';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import images from '~/assets/images';
+import AccountItem from '~/components/AccountItem';
 
 const cx = classNames.bind(styles);
 
 const Header = () => {
     const [searchResult, setSearchResult] = useState([]);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setSearchResult([]);
+        }, 0);
+    }, []);
 
     return (
         <>
@@ -30,7 +37,15 @@ const Header = () => {
                                 tabIndex={-1}
                                 {...attrs}
                             >
-                                Kết quả
+                                <PopperWrapper>
+                                    <h4 className={cx('search-title')}>
+                                        <AccountItem />
+                                        <AccountItem />
+                                        <AccountItem />
+                                        <AccountItem />
+                                        <AccountItem />
+                                    </h4>
+                                </PopperWrapper>
                             </div>
                         )}
                     >
