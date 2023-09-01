@@ -86,8 +86,16 @@
 }
 
 // Icon inside button
-
 .iconLeft-btn + .title-btn,
 .title-btn + .iconRight-btn {
     margin-left: 8px;
+}
+
+.iconLeft-btn,
+.iconRight-btn {
+    // Thuộc tính display với giá trị inline-block này giúp ta có thể set width
+    // cho các element có thông số mặc định như thẻ div, button, ...
+    display: inline-block;
+    width: 20px;
+    text-align: center;
 }
