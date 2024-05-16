@@ -14,7 +14,39 @@
 
 // Menu items
 .menu-item {
+    width: 100%;
+    padding: 11px 16px;
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 600;
+
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
     }
+}
+
+// Header
+.header {
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
 }
